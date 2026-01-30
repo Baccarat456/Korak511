@@ -1,0 +1,24 @@
+{
+    "title": "Input schema of the Congressional Trade Tracker",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "URLs to start crawling from (e.g., congress.gov search results, member disclosure pages).",
+            "editor": "requestListSources",
+            "prefill": [
+                {
+                    "url": "https://www.congress.gov/search?q={%22search%22:%5B%22trade%22%5D}"
+                }
+            ]
+        },
+        "maxRequestsPerCrawl": {
+            "title": "Max Requests per Crawl",
+            "type": "integer",
+            "description": "Maximum number of requests that can be made by this crawler.",
+            "default": 200
+        }
+    }
+}

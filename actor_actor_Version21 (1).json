@@ -1,0 +1,17 @@
+{
+    "actorSpecification": 1,
+    "name": "Congressional Trade Tracker",
+    "title": "Congressional Trade Tracker",
+    "description": "Tracks congressional trade disclosures, related bills and press releases — collects metadata for monitoring trade-related activities.",
+    "version": "0.0",
+    "meta": {
+        "templateId": "ai-generated-actor",
+        "generatedBy": "Gpt-4o-mini"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    },
+    "dockerfile": "../Dockerfile"
+}
